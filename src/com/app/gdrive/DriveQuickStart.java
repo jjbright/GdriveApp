@@ -27,7 +27,7 @@ public class DriveQuickStart {
     	String custData = cManager.jsonCustomer(cust).toString();
     	System.out.println(custData);
     	Drive service = gdUtils.getDriveService();
-    	String fileId = gdUtils.getFileId(service, "1G9vFaUCsPN6GomJRrK7vML9bSd5Wm63t", "customers.json");
+    	String fileId = gdUtils.getFileId(service, "<folderID>", "<fileName>");
 		String nFileId = cManager.addCustomer(service, fileId, custData);
 		System.out.println("File ID: " + nFileId);
 		 
